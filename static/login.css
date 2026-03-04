@@ -1,0 +1,65 @@
+:root{
+    --body:#ffffff;
+    --text: #000000;
+}
+
+.logo{
+    background: url("Images/logo.png");
+    height: 200px;
+    width: 200px;
+}
+
+
+.reg{
+    font-family: Dancing Script;
+    font-size: 115px;
+    font-weight: 650;
+    letter-spacing: 0.6px;
+    color: #565656;
+
+    margin-bottom: 0px;
+    margin-left: 650px;
+    margin-top: 10px;
+    
+}
+
+
+
+.user{
+    font-family: Open Sans;
+    font-size: 25px;
+    font-weight: 450;
+    letter-spacing: 0.6px;
+
+    margin-left: 770px;
+    margin-bottom: 30px;
+}
+
+.int{
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 350;
+    letter-spacing: 0.6px;
+    width: 350px;
+    border-radius: 5px;
+    border: 2px solid #979696;
+    padding: 3px 10px;
+
+    margin-left: 670px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.sub{
+    margin-left: 790px;
+    font-family: Open Sans;
+    font-size: 15px;
+    font-weight: 450;
+    letter-spacing: 0.6px;
+    color: var(--body);
+    background-color: rgb(14, 100, 228);
+    border-radius: 10px;
+    border: 0px solid var(--body);
+    padding: 10px 30px;
+    
+}
