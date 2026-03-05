@@ -13,10 +13,32 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
 </head>
 <body>
-    <header class="nevbar">
-        <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo">
+    <header class="nevbar"> 
+        <img src="{{ url_for('static', filename='images/logo.png') }}" class="logo"height="200px" width="200px">
+        <div>
+            <input id="searchInput" placeholder="Search Indian dishes... 🍛" class="search-box">
+        </div>
+        <ul class="menu">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+
+        <a href="profile.html" target="_blank" rel="noopener noreferrer" class="contact-btn">Profile</a>
     </header>
 
-    
+    <div class="up">
+        <img src="{{ url_for('static', filename='images/upper body.png') }}"alt="uppar body" class="up-body">
+    </div>
+
+    <div class="low">
+        <img src="{{ url_for('static', filename='images/lower_body.png') }}"alt="lower body" class="low-body">
+    </div>
+
 </body>
+
+<footer>
+    <img src="{{ url_for('static', filename='images/footer.png') }}"alt="footer" class="footer1" width="1500px">
+</footer>
+
 </html>
