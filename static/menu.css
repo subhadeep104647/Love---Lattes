@@ -77,22 +77,6 @@ body{
     border-radius: 20px;
 }
 
-.up{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 20px;
-
-    
-}
-
-.low{
-    display: grid;
-    grid-template-columns: 1fr;
-    margin-top: 20px;
-
-    margin-left: 50px;
-}
-
 footer{
     display: grid;
     grid-template-columns: 1fr;
