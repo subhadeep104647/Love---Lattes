@@ -1,0 +1,63 @@
+:root{
+    --body:#ffffff;
+    --text: #000000;
+}
+
+.nevbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 20px 30px;
+    max-width: 1550px;
+    height: 40px;
+    margin:  0 auto;
+    text-decoration: none;
+    position: sticky;
+    top: 0;
+}
+
+.search-box{
+    font-family: Dancing Script;
+    font-size: 15px;
+    font-weight: 450;
+    letter-spacing: 0.6px;
+    width: 350px;
+    border-radius: 30px;
+    border: 2px solid #979696;
+    padding: 3px 10px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu a{
+    text-decoration: none;
+
+    font-family: Dancing Script;
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.menu a.active{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.contact-btn{
+    text-decoration: none;
+
+    font-family: Dancing Script;
+    color: var(--text);
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+
+
