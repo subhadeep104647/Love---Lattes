@@ -3,6 +3,14 @@
     --text: #000000;
 }
 
+body{
+    background: url('body.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    font-family: poppins;
+    background-color: var(--body);
+}
+
 .nevbar{
     display: flex;
     align-items: center;
