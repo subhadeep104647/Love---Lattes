@@ -99,6 +99,149 @@
         </div>
 
     </div>
+
+    <h1>Italian Breakfast</h1>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Cornetto.png') }}"height="400px" width="200px" class="">
+            <div class="name">Cornetto (Italian Croissant)</div>
+            <div class="price">₹150</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Cornetto (Italian Croissant)">
+                    <input type="hidden" name="price" value="150">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Ricotta Pancakes.png') }}"height="400px" width="200px" class="e2">
+            <div class="name">Ricotta Pancakes</div>
+            <div class="price">₹240</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Ricotta Pancakes">
+                    <input type="hidden" name="price" value="240">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Italian Toast with Mascarpone.png') }}"height="400px" width="200px" class="e">
+            <div class="name">Italian Toast with Mascarpone</div>
+            <div class="price">₹200</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Italian Toast with Mascarpone">
+                    <input type="hidden" name="price" value="200">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Frittata (Italian Omelette).png') }}"height="300px" width="200px" class="e5">
+            <div class="name">Frittata (Italian Omelette)</div>
+            <div class="price">₹220</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Frittata (Italian Omelette)">
+                    <input type="hidden" name="price" value="220">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Ciabatta Breakfast Sandwich.png') }}"height="300px" width="200px" class="e4">
+            <div class="name">Ciabatta Breakfast Sandwich</div>
+            <div class="price">₹260</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Ciabatta Breakfast Sandwich">
+                    <input type="hidden" name="price" value="260">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <h1>Italian Main Dishes</h1>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Spaghetti Aglio e Olio.png') }}"height="400px" width="200px" class="">
+            <div class="name">Spaghetti Aglio e Olio</div>
+            <div class="price">₹280</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Spaghetti Aglio e Olio">
+                    <input type="hidden" name="price" value="150">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Penne Arrabbiata.png') }}"height="400px" width="200px" class="e2">
+            <div class="name">Penne Arrabbiata</div>
+            <div class="price">₹300</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Penne Arrabbiata">
+                    <input type="hidden" name="price" value="300">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Fettuccine Alfredo.png') }}"height="400px" width="200px" class="e">
+            <div class="name">Fettuccine Alfredo</div>
+            <div class="price">₹340</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Fettuccine Alfredo">
+                    <input type="hidden" name="price" value="340">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Lasagna.png') }}"height="300px" width="200px" class="e5">
+            <div class="name">Lasagna</div>
+            <div class="price">₹380</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Lasagna">
+                    <input type="hidden" name="price" value="380">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Pasta Primavera.png') }}"height="300px" width="200px" class="e4">
+            <div class="name">Pasta Primavera</div>
+            <div class="price">₹320</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Pasta Primavera">
+                    <input type="hidden" name="price" value="320">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
 <footer>

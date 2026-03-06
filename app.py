@@ -63,11 +63,14 @@ def cart():
 @app.route("/remove/<int:index>")
 def remove(index):
 
-    session["cart"].pop(index)
-    session.modified = True
+    cart = session.get("cart", [])
+
+    if 0 <= index < len(cart):
+        cart.pop(index)
+        session["cart"] = cart
+        session.modified = True
 
     return redirect(url_for("cart"))
-
 
 # PLACE ORDER
 @app.route("/order")
