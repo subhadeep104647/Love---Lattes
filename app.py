@@ -1,4 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, session
+import json
+from flask import flash
 
 app = Flask(__name__)
 app.secret_key = "love_lattes_secret"
@@ -78,7 +80,8 @@ def order():
 
     session.pop("cart", None)
 
-    return "🎉 Order placed successfully! Your Order is on the way, Thank you "
+    flash("🎉 Order placed successfully! Your Order is on the way, Thank you ")
+    return redirect(url_for("cart"))
 
 
 @app.route("/about")
@@ -86,9 +89,36 @@ def about():
     return render_template("about.html")
 
 
-@app.route("/profile")
-def profile():
-    return render_template("profile.html")
+@app.route("/Feedback")
+def Feedback():
+    return render_template("feedback.html")
+
+@app.route("/submit_feedback", methods=["POST"])
+def submit_feedback():
+
+    name = request.form.get("name")
+    email = request.form.get("email")
+    message = request.form.get("message")
+
+    feedback_data = {
+        "name": name,
+        "email": email,
+        "message": message
+    }
+
+    try:
+        with open("feedback.json","r") as file:
+            data = json.load(file)
+    except:
+        data = []
+
+    data.append(feedback_data)
+
+    with open("feedback.json","w") as file:
+        json.dump(data,file,indent=4)
+
+    flash("Thank you for your feedback ☕")
+    return redirect(url_for("Feedback"))
 
 
 if __name__ == "__main__":
