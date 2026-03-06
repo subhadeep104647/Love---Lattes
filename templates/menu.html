@@ -313,6 +313,148 @@
 
     </div>
 
+    <h1>Desserts</h1>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Tiramisu.png') }}"height="400px" width="200px" class="">
+            <div class="name">Tiramisu</div>
+            <div class="price">₹260</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Tiramisu">
+                    <input type="hidden" name="price" value="260">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Panna Cotta.png') }}"height="400px" width="200px" class="e2">
+            <div class="name">Panna Cotta</div>
+            <div class="price">₹220</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Panna Cotta">
+                    <input type="hidden" name="price" value="220">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Chocolate Cannoli.png') }}"height="400px" width="200px" class="e">
+            <div class="name">Chocolate Cannoli</div>
+            <div class="price">₹230</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Chocolate Cannoli">
+                    <input type="hidden" name="price" value="230">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Gelato (Italian Ice Cream).png') }}"height="300px" width="200px" class="e5">
+            <div class="name">Gelato (Italian Ice Cream)</div>
+            <div class="price">₹200</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Gelato (Italian Ice Cream)">
+                    <input type="hidden" name="price" value="200">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Affogato Dessert.png') }}"height="300px" width="200px" class="e4">
+            <div class="name">Affogato Dessert</div>
+            <div class="price">₹210</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Affogato Dessert">
+                    <input type="hidden" name="price" value="210">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <h1>Cold Beverages</h1>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Italian Iced Latte.png') }}"height="400px" width="200px" class="">
+            <div class="name">Italian Iced Latte</div>
+            <div class="price">₹200</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Italian Iced Latte">
+                    <input type="hidden" name="price" value="200">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Affogato.png') }}"height="400px" width="200px" class="e2">
+            <div class="name">Affogato</div>
+            <div class="price">₹210</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Affogato">
+                    <input type="hidden" name="price" value="210">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Italian Lemon Soda.png') }}"height="400px" width="200px" class="e">
+            <div class="name">Italian Lemon Soda</div>
+            <div class="price">₹160</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Italian Lemon Soda">
+                    <input type="hidden" name="price" value="160">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Iced Caramel Latte.png') }}"height="300px" width="200px" class="e5">
+            <div class="name">Iced Caramel Latte</div>
+            <div class="price">₹220</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Iced Caramel Latte">
+                    <input type="hidden" name="price" value="220">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/Strawberry Italian Soda.png') }}"height="300px" width="200px" class="e4">
+            <div class="name">Strawberry Italian Soda</div>
+            <div class="price">₹190</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Strawberry Italian Soda">
+                    <input type="hidden" name="price" value="190">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
 </body>
 
 <footer>
