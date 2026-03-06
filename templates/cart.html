@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Funnel+Display:wght@300..800&family=Gravitas+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+CU+Guides&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='cart.css') }}">
 </head>
 <body>
     <header class="nevbar"> 
@@ -19,23 +19,48 @@
             <input type="text" id="searchInput" placeholder="Search you want ......" class="search">
         </div>
         <ul class="menu">
-            <li><a href="{{ url_for('home') }}" class="active">Home</a></li>
-            <li><a href="{{ url_for('menu') }}">Menu</a></li>
-            <li><a href="/cart">Cart ({{ cart_count }})</a></li>
-            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li class="l"><a href="{{ url_for('home') }}">Home</a></li>
+            <li class="l"><a href="{{ url_for('menu') }}">Menu</a></li>
+            <li class="l"><a href="/cart" class="active">Cart</a></li>
+            <li class="l"><a href="{{ url_for('about') }}">About</a></li>
 
         </ul>
 
         <a href="{{ url_for('profile') }}" class="contact-btn">Profile</a>
     </header>
 
-    <div class="up">
-        <img src="{{ url_for('static', filename='images/upper body.png') }}"alt="uppar body" class="up-body">
-    </div>
+    <h1>Your Cart 🛒</h1>
 
-    <div class="low">
-        <img src="{{ url_for('static', filename='images/lower_body.png') }}"alt="lower body" class="low-body">
-    </div>
+{% if cart %}
+
+<ul class="ul">
+
+{% for item in cart %}
+
+<li class="li">
+{{ item.item }} - ₹{{ item.price }}
+
+<a href="/remove/{{ loop.index0 }}">
+<button>Remove</button>
+</a>
+
+</li>
+
+{% endfor %}
+
+</ul>
+
+<h2>Total: ₹{{ total }}</h2>
+
+<a href="/order">
+<button>Order Now</button>
+</a>
+
+{% else %}
+
+<p>Your cart is empty</p>
+
+{% endif %}
 
 </body>
 

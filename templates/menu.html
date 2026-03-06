@@ -21,6 +21,7 @@
         <ul class="menu">
             <li><a href="{{ url_for('home') }}">Home</a></li>
             <li><a href="{{ url_for('menu') }}" class="active">Menu</a></li>
+            <li><a href="/cart">Cart ({{ cart_count }})</a></li>
             <li><a href="{{ url_for('about') }}">About</a></li>
 
         </ul>
@@ -28,6 +29,76 @@
         <a href="{{ url_for('profile') }}" class="contact-btn">Profile</a>
     </header>
 
+    <h1>Coffee & Espresso</h1>
+
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/coffee2.png') }}"height="400px" width="200px" class="e1">
+            <div class="name">Espresso</div>
+            <div class="price">₹120</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Espresso">
+                    <input type="hidden" name="price" value="120">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/coffee3.png') }}"height="400px" width="200px" class="e2">
+            <div class="name">Cappuccino</div>
+            <div class="price">₹180</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Cappuccino">
+                    <input type="hidden" name="price" value="180">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/1st.png') }}"height="400px" width="200px" class="e">
+            <div class="name">Love and Lattes Special Rose Latte</div>
+            <div class="price">₹250</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Love andLattes Special Rose Latte">
+                    <input type="hidden" name="price" value="250">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/coffee6.png') }}"height="300px" width="200px" class="e5">
+            <div class="name">Caramel Macchiato</div>
+            <div class="price">₹220</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Caramel Macchiato">
+                    <input type="hidden" name="price" value="220">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/coffee5.png') }}"height="300px" width="200px" class="e4">
+            <div class="name">Mocha Latte</div>
+            <div class="price">₹210</div>
+            <div class="button-row">
+                <form action="/add_to_cart" method="POST">
+                    <input type="hidden" name="item" value="Mocha Latte">
+                    <input type="hidden" name="price" value="210">
+                    <button type="submit" class="btn-blue">Add to Cart</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
 </body>
 
 <footer>
